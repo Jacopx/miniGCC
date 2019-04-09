@@ -1,0 +1,6 @@
+/* Example of Bubble sort sorting algorithm*/
+
+double x[5];
+int i, j;
+double swap;
+int pos;
