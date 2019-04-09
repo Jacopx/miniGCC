@@ -4,3 +4,6 @@ double x[5];
 int i, j;
 double swap;
 int pos;
+
+double f = 10;
+double f = 0.2;

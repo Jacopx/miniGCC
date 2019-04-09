@@ -9,6 +9,7 @@ id = [a-zA-Z][a-zA-Z0-9]*
 intKey = int
 intNumber	= [1-9][0-9]*
 doubleKey = double
+doubleNumber = [1-9][0-9]*"."[0-9]* | "."[0-9]+ | 0"."[0-9]*
 
 %%
 \/\/(.*) {;}
@@ -37,7 +38,7 @@ doubleKey = double
 
 {id}      {System.out.print("ID: " +yytext() + " ");}
 {intNumber}	{System.out.print("INT: " +yytext() + " ");}
-
+{doubleNumber} {System.out.print("DOUBLE: " +yytext() + " ");}
 
 {nl}|" "|\t 	{System.out.println("");}
 
